@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/master.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>JAY</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div class="logo-image">
+                    <img src="images/Jay_Logo.png" class="img-fluid">
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="portfolio.html" class="nav__link active">Portfolio</a></li>
+                        <li class="nav__item"><a href="contact.php" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== Gallery =====-->
+          
+    <main id="app">
+
+        <h1 @click="headerCall">{{ message }}</h1>
+            <!-- <ul class="img-container">
+            <li class="img-link" v-for="item, index in cars">
+            <img v-on:click="carData(item)" :src="'images/' + item.Image">
+            </li>
+            </ul> -->
+        <div class="img-container">
+            <div class="img-link" v-for="item, index in cars">
+                <img v-on:click="carData(item)" :src="'images/' + item.Image">
+            </div>
+        </div>
+    
+        <div class="bio-data" :class="{'show-bio' : show_bio_data}">
+            <h1>{{carsData.Name}}</h1><p>{{carsData.Description}}</p>
+        </div>
+        </main>
+
+        <!--fOOTER-->
+        <footer class="footer">
+            <p class="footer__title">JAY</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p>&#169; 2020 copyright all right reserved</p>
+        </footer>
+
+        
+
+       <!--Main JS-->
+        <script type="module" src="js/gallery.js"></script>
+ 
+    
+    
+    
+    </body>
+</html>
