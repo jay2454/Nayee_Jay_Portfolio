@@ -1,3 +1,4 @@
+![It is MINI!](images/Jay_Logo.png "The logo")
 # The Begining！
 This is my first Portfolio in my life and I wanted to make it unique, classic, colorfull and easy to use and understand for anyone. I will show all my skills and work I have done in website and make it look vibrant with colors and modern design.
 
